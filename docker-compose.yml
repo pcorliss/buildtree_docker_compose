@@ -1,0 +1,6 @@
+app:
+  image: ubuntu
+  links:
+   - redis
+redis:
+  image: redis

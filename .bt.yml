@@ -1,0 +1,12 @@
+docker_image: "jpetazzo/dind"
+packages:
+- docker-compose
+services:
+- docker
+setup:
+- "curl -L https://github.com/docker/compose/releases/download/1.4.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
+- "chmod +x /usr/local/bin/docker-compose"
+dependencies:
+- "docker-compose up"
+test:
+- "docker-compose app echo Tests"
