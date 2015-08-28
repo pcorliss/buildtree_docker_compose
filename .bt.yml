@@ -7,4 +7,4 @@ setup:
 dependencies:
 - "docker-compose up"
 test:
-- "docker-compose app echo Tests"
+- "docker-compose run app echo Tests"
