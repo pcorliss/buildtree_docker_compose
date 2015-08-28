@@ -1,6 +1,4 @@
 docker_image: "jpetazzo/dind"
-packages:
-- docker-compose
 services:
 - docker
 setup:
